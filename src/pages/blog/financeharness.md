@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/Post.astro
-title: "My 4B model searched for the same filing 48 times. The fix wasn't the model."
-summary: "Financeharness got into RL4LLM-Agents at ICAIF. How a better room, not a bigger model, took a 4B agent from 37% to 67% on FinanceBench, and where it still falls over."
+title: "FinanceHarness: My experiments with building a dedicated agentic retrieval harness for finance tasks"
+summary: "FinanceHarness got into RL4LLM-Agents at ICAIF. How a better room, not a bigger model, took a 4B agent from 37% to 67% on FinanceBench, and where it still falls over."
 date: 2026-10-17T18:00:00Z
 image: /media/financeharness/trajectories.png
 ---
