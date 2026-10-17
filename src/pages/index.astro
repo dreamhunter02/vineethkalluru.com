@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 import { SITE, PROJECTS } from "../site";
 import { getPosts } from "../posts";
 
@@ -7,8 +8,8 @@ const posts = getPosts();
 const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 ---
 <Base>
-  <h1>Hi, I’m Vineeth.</h1>
-  <p class="bio">{SITE.bio}</p>
+  <h1>{SITE.intro}</h1>
+  <p class="bio">{SITE.bio} <a href={SITE.x}>{SITE.chat}</a></p>
 
   <section id="writing">
     <h2 class="section-title">Writing</h2>
@@ -22,16 +23,7 @@ const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month:
   </section>
 
   <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    {PROJECTS.map((p) => (
-      <a class="card project" href={p.href}>
-        <img src={p.image} alt="" loading="lazy" />
-        <div>
-          <div class="title">{p.title}</div>
-          <div class="summary">{p.summary}</div>
-        </div>
-        <span class="arrow">↗</span>
-      </a>
-    ))}
+    <h2 class="section-title">Active projects</h2>
+    {PROJECTS.map((p) => <ProjectCard project={p} />)}
   </section>
 </Base>
