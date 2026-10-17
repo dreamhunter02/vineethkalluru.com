@@ -1,39 +1,5 @@
-/* Themes: set THEME in src/site.ts. Preview any theme with ?theme=<name> in the URL. */
-
-/* paper: warm off-white, serif headings, ink-red accent */
-:root, [data-theme="paper"] {
-  --bg: #f6f1e7;
-  --fg: #22201c;
-  --muted: #6f6a60;
-  --line: #e2d9c8;
-  --card: #fbf8f1;
-  --accent: #b4442b;
-  --ring-track: #e7dfcf;
-  --code-bg: #efe8da;
-  --font-body: "Source Serif 4", Georgia, serif;
-  --font-head: "Fraunces", Georgia, serif;
-  --font-ui: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --radius: 6px;
-}
-
-/* midnight: deep navy, the robot's blue as accent */
-[data-theme="midnight"] {
-  --bg: #0d1220;
-  --fg: #e6e9f2;
-  --muted: #8f97ad;
-  --line: #1f2740;
-  --card: #121a2d;
-  --accent: #38bdf8;
-  --ring-track: #1f2a44;
-  --code-bg: #18213a;
-  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-head: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-ui: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --radius: 12px;
-}
-
-/* studio: crisp white, bold grotesk headings, electric orange */
-[data-theme="studio"] {
+/* Studio: crisp white, bold grotesk headings, electric orange */
+:root {
   --bg: #ffffff;
   --fg: #0f0f0f;
   --muted: #6b6b6b;
@@ -45,23 +11,8 @@
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-head: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-ui: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
   --radius: 14px;
-}
-
-/* terminal: near-black, monospace, phosphor green */
-[data-theme="terminal"] {
-  --bg: #0b0d0b;
-  --fg: #d7e2d3;
-  --muted: #7f8c7b;
-  --line: #1c221c;
-  --card: #101410;
-  --accent: #7ee787;
-  --ring-track: #1d261d;
-  --code-bg: #141a14;
-  --font-body: "JetBrains Mono", ui-monospace, Menlo, monospace;
-  --font-head: "JetBrains Mono", ui-monospace, Menlo, monospace;
-  --font-ui: "JetBrains Mono", ui-monospace, Menlo, monospace;
-  --radius: 4px;
 }
 
 * { box-sizing: border-box; }
@@ -72,7 +23,6 @@ body {
   color: var(--fg);
   font: 17px/1.7 var(--font-body);
 }
-[data-theme="terminal"] body, [data-theme="terminal"] { font-size: 15px; }
 .wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
 
 header.site { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 56px; font-family: var(--font-ui); }
@@ -134,7 +84,7 @@ a.card:hover { border-color: var(--accent); transform: translateY(-1px); }
 
 article .meta { color: var(--muted); font: 14px/1.4 var(--font-ui); margin-bottom: 32px; }
 article img, article video { max-width: 100%; border-radius: var(--radius); display: block; margin: 24px auto; }
-article code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.88em; }
+article code { font-family: var(--font-mono); background: var(--code-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.88em; }
 article pre { background: var(--code-bg); padding: 14px 16px; border-radius: var(--radius); overflow-x: auto; }
 article pre code { background: none; padding: 0; }
 article blockquote { margin: 20px 0; padding-left: 16px; border-left: 3px solid var(--line); color: var(--muted); }

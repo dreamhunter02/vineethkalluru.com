@@ -1,7 +1,5 @@
-// Everything personal lives here: edit this file to change the theme, intro, links and projects.
+// Everything personal lives here: edit this file to change the intro, links and projects.
 
-// One of: "paper" | "midnight" | "studio" | "terminal" (see src/styles/global.css)
-export const THEME = "studio";
 
 export const SITE = {
   name: "Vineeth Kalluru",
@@ -14,7 +12,7 @@ export const SITE = {
   url: "https://vineethkalluru.com",
   github: "https://github.com/dreamhunter02",
   x: "https://x.com/vineethkalluru",
-  linkedin: "", // e.g. "https://www.linkedin.com/in/your-handle"; the footer icon appears once set
+  linkedin: "https://www.linkedin.com/in/vineethkalluru",
 };
 
 export interface Project {

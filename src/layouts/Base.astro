@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Icon from "../components/Icon.astro";
-import { SITE, THEME } from "../site";
+import { SITE } from "../site";
 
 interface Props {
   title?: string;
@@ -15,20 +15,13 @@ const fullTitle = title ? `${title} · ${SITE.name}` : SITE.title;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const ogImage = new URL(image, SITE.url).href;
 const fonts =
-  "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap";
+  "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap";
 ---
 <!doctype html>
-<html lang="en" data-theme={THEME}>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script is:inline>
-      // Preview another theme with ?theme=midnight (not saved).
-      try {
-        const t = new URLSearchParams(location.search).get("theme");
-        if (t) document.documentElement.dataset.theme = t;
-      } catch {}
-    </script>
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
