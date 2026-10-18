@@ -12,9 +12,7 @@ Some days are just amazing. This was one of them:
 
 Our paper, **Financeharness: Engineering a Finance Retrieval Harness for Search Agents Powered by
 Sub-10B Models**, got into the RL4LLM-Agents workshop at the 7th International Conference on AI in
-Finance. This was an independent side project with five amazing co-authors: Snigdha Potluri,
-Prachi Modi, Barathwaj Anandan, Rohan Rao and Mrunmayee Rane. A lot of evenings, and a stubborn
-belief that small models deserve better tools.
+Finance. This was an independent side project I worked on. A lot of evenings, and a stubborn belief that small models deserve better tools.
 
 Here's the story, including the parts that didn't work.
 
@@ -44,7 +42,7 @@ any of us would do with no memory: it searches again. And again.
 
 ## The idea: fix the room, not the model
 
-We didn't touch the weights. We built Financeharness around three rules:
+I didn't touch the weights. I built Financeharness around three rules:
 
 1. **Discovery is not evidence.** Search results are just *candidate locations*. Only actually
    reading the source text produces a **receipt**: the exact text the agent saw, pinned to a
@@ -128,7 +126,7 @@ same model with the harness: a few searches, a couple of reads, done.
 | Accepted answers | 114 (76%) | 94 (63%) | **141 (94%)** |
 | Tool calls (mean) | 14.8 | 11.7 | **7.7** |
 
-No per-model tuning. And yes, the 4B beat the 9B, which we'll get to.
+No per-model tuning. And yes, the 4B beat the 9B, which I'll get to.
 
 ## Where it still falls over: they find it, but don't finish
 
@@ -189,6 +187,6 @@ failure analysis tells us what to reward: make unanswered episodes costly, and g
 committing once the evidence is in hand. A reward that only pays for correct, submitted answers can
 be gamed by searching longer, and we've already watched our agents try.
 
-Huge thanks to my co-authors for the late nights, and to the RL4LLM-Agents reviewers. If you're
+Thanks to the RL4LLM-Agents reviewers. If you're
 building search agents on small models, I'd love to compare notes. DM me on
 [X](https://x.com/vineethkalluru).
