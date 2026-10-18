@@ -7,7 +7,7 @@ export const SITE = {
   description:
     "Vineeth Kalluru is an applied AI engineer working on post-training, evals and voice agents.",
   intro: "Hi, I'm Vineeth.",
-  bio: "Applied AI engineer working on post-training, evals and voice agents. Lately: an ESP32 robot that talks to my AI agent.",
+  bio: "Applied AI engineer helping enterprises deploy AI agents at scale — data curation, post-training, evals, model strategy. I write about innovative products bridging AI and the real world, my thoughts on this space, and deeper research dives.",
   chat: "Wanna chat? DM me on X.",
   url: "https://vineethkalluru.com",
   github: "https://github.com/dreamhunter02",
