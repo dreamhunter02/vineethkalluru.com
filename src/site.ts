@@ -52,11 +52,6 @@ export const EXPERIENCE: Entry[] = [
     note: "Technical owner of GenAI adoption for 25+ Tier-1 enterprise software and industrial customers, plus Microsoft Azure and OpenAI. Highlights: Zoom on-prem AI Companion (GTC 2026), Cohesity Gaia architecture (GTC 2026 keynote), Nemotron 3 Nano behind Glean's production LLM router, NVIDIA technical lead for Azure's MLPerf Inference v4.0 submission, and the Nemotron-CC data pipeline in NeMo Curator.",
   },
   {
-    title: "AI Engineer, Rudhira Biosciences",
-    meta: "2026 - Present",
-    note: "AI-driven neoantigen discovery platform for Lynch syndrome cancers on AWS HealthOmics.",
-  },
-  {
     title: "ML Accelerator Architect, Cloud TPU, Google",
     meta: "Jul 2022 - Nov 2023",
     note: "Performance analysis of Gemini workloads on TPU v6 and v7.",
