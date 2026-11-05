@@ -49,7 +49,7 @@ export const EXPERIENCE: Entry[] = [
   {
     title: "Senior Solutions Architect, Generative AI, NVIDIA",
     meta: "Nov 2023 - 2026",
-    note: "Technical owner of GenAI adoption for 25+ Tier-1 enterprise software and industrial customers, plus Microsoft Azure and OpenAI. Highlights: Zoom on-prem AI Companion (GTC 2026), Cohesity Gaia architecture (GTC 2026 keynote), Nemotron 3 Nano behind Glean's production LLM router, NVIDIA technical lead for Azure's MLPerf Inference v4.0 submission, and the Nemotron-CC data pipeline in NeMo Curator.",
+    note: "Technical lead for 25+ Tier-1 enterprise software and industrial partners plus hyperscale cloud and frontier-lab partners: solution design from POC to GA production, inference at scale, post-training data, evals and agent harnesses, production debugging, executive briefings and strategic advisory, and field feedback into Nemotron, NeMo and NIM. Authored the Nemotron-CC data pipeline in NeMo Curator.",
   },
   {
     title: "ML Accelerator Architect, Cloud TPU, Google",
@@ -64,14 +64,14 @@ export const EXPERIENCE: Entry[] = [
 ];
 
 export const PUBLICATIONS: Entry[] = [
-  { title: "Between Weights and Workflows: Executable Graph Contracts for Bounded Enterprise Agents", meta: "IEEE ICA 2026, Kumamoto. Accepted (oral), first author" },
+  { title: "Between Weights and Workflows: Executable Graph Contracts for Bounded Enterprise Agents", meta: "IEEE ICA 2026. Accepted (oral), first author" },
   { title: "The Coherence Trap: Layer-Decomposed Failure-Mode Discovery in a Deployed Agentic LLM System", meta: "IEEE ISSRE 2026 Industry Track. Presented, first author" },
-  { title: "The Agentic Data Platform: A Contention Model and Reference Architecture for Multi-Agent Workloads on the Lakehouse", meta: "IEEE BigData 2026. Accepted, co-author" },
-  { title: "Beyond the Blue Link: Empirical Evaluation of Generative Engine Optimization in Stochastic Retrieval Systems", meta: "ACM Hypertext 2026. Published, third author", href: "https://doi.org/10.1145/3800935.3830864" },
-  { title: "Edit-Distance Links: A Hypertextual Reading of Conditional-Tokenization World Models", meta: "ACM Hypertext 2026. Published, third author", href: "https://doi.org/10.1145/3800935.3830861" },
+  { title: "Beyond the Blue Link: Empirical Evaluation of Generative Engine Optimization in Stochastic Retrieval Systems", meta: "ACM Hypertext 2026. Published", href: "https://doi.org/10.1145/3800935.3830864" },
+  { title: "Edit-Distance Links: A Hypertextual Reading of Conditional-Tokenization World Models", meta: "ACM Hypertext 2026. Published", href: "https://doi.org/10.1145/3800935.3830861" },
+  { title: "NVIDIA Nemotron technical reports: Nemotron Nano 2; Llama-Embed-Nemotron-8B", meta: "arXiv 2025, co-author / contributor", href: "https://arxiv.org/abs/2508.14444" },
+  { title: "FinanceHarness: Engineering a Finance Retrieval Harness for Search Agents Powered by Sub-10B Models", meta: "RL4LLM-Agents workshop, ACM ICAIF 2026. Accepted, sole author", href: "/blog/financeharness" },
   { title: "SkillOpt: Trajectory-Derived, Verifier-Grounded Compilation of LLM-Agent Skills", meta: "ACM CAIS 2026 Agent Skills Workshop", href: "https://openreview.net/forum?id=2ONrrPIFYi" },
-  { title: "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model", meta: "arXiv 2025, co-author", href: "https://arxiv.org/abs/2508.14444" },
-  { title: "Hardware Aware Neural Network Architectures using FbNet (HANNA)", meta: "arXiv 2019, first author", href: "https://arxiv.org/abs/1906.07214" },
+  { title: "HANNA: Hardware Aware Neural Network Architectures using FbNet", meta: "arXiv 2019, first author", href: "https://arxiv.org/abs/1906.07214" },
 ];
 
 export const TALKS: Entry[] = [
@@ -79,12 +79,10 @@ export const TALKS: Entry[] = [
   { title: "Building Observable and Scalable Multi-Agent Workflows for Asset Lifecycle Management", meta: "NVIDIA GTC 2026 full-day DLI workshop (co-instructor)", href: "https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-dliw82268/" },
   { title: "Get From Pilot to Production the Quick, Easy, Optimized Way", meta: "Microsoft Ignite 2024", href: "https://www.youtube.com/watch?v=m9e1ItBramY" },
   { title: "Quickly deploy NVIDIA optimized generative AI on Azure AI Studio", meta: "Microsoft Build 2024", href: "https://www.youtube.com/watch?v=8jM7y4aQqag" },
-  { title: "Inside Glean's Enterprise Agent Stack: Post-Training NVIDIA Nemotron and Engineering the Agent Harness", meta: "TechEquity AI Summit 2026, Nov 5 (with Glean)", href: "https://events.techequity-ai.org/session/LNind" },
+  { title: "Inside Glean's Enterprise Agent Stack: Post-Training NVIDIA Nemotron and Engineering the Agent Harness", meta: "TechEquity AI Summit 2026, Nov 5", href: "https://events.techequity-ai.org/session/LNind" },
 ];
 
 export const SERVICE: Entry[] = [
-  { title: "IEEE Senior Member", meta: "IEEE Computer Society Elevation Committee" },
   { title: "Program committee", meta: "IEEE ICA 2026; KDD 2026 AgenticSE and Agent4IR workshops" },
-  { title: "Reviewer", meta: "IEEE TKDE; NeurIPS 2026 (ethics and workshops); ACM CAIS 2026; KDD 2026 workshops" },
-  { title: "Technical reviewer", meta: "AI Agents: The Definitive Guide; Hands-On LLM Serving and Optimization (O'Reilly)" },
+  { title: "Reviewer", meta: "NeurIPS 2026 (ethics; UserSim and Continual World Models workshops); ACM CAIS 2026; KDD 2026 workshops; IEEE DSAA 2026; AIKP 2026; IEC2T 2026" },
 ];
