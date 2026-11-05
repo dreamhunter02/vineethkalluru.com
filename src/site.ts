@@ -69,7 +69,7 @@ export const PUBLICATIONS: Entry[] = [
   { title: "Beyond the Blue Link: Empirical Evaluation of Generative Engine Optimization in Stochastic Retrieval Systems", meta: "ACM Hypertext 2026. Published", href: "https://doi.org/10.1145/3800935.3830864" },
   { title: "Edit-Distance Links: A Hypertextual Reading of Conditional-Tokenization World Models", meta: "ACM Hypertext 2026. Published", href: "https://doi.org/10.1145/3800935.3830861" },
   { title: "NVIDIA Nemotron technical reports: Nemotron Nano 2; Llama-Embed-Nemotron-8B", meta: "arXiv 2025, co-author / contributor", href: "https://arxiv.org/abs/2508.14444" },
-  { title: "FinanceHarness: Engineering a Finance Retrieval Harness for Search Agents Powered by Sub-10B Models", meta: "RL4LLM-Agents workshop, ACM ICAIF 2026. Accepted, sole author", href: "/blog/financeharness" },
+  { title: "FinanceHarness: Engineering a Finance Retrieval Harness for Search Agents Powered by Sub-10B Models", meta: "RL4LLM-Agents workshop, ACM ICAIF 2026. Accepted (oral), sole author", href: "/blog/financeharness" },
   { title: "SkillOpt: Trajectory-Derived, Verifier-Grounded Compilation of LLM-Agent Skills", meta: "ACM CAIS 2026 Agent Skills Workshop", href: "https://openreview.net/forum?id=2ONrrPIFYi" },
   { title: "HANNA: Hardware Aware Neural Network Architectures using FbNet", meta: "arXiv 2019, first author", href: "https://arxiv.org/abs/1906.07214" },
 ];
