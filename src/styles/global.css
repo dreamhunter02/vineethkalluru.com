@@ -110,3 +110,10 @@ footer.site svg.icon { width: 16px; height: 16px; fill: currentColor; }
   .project summary { gap: 8px; padding: 12px; }
   .project .actions { gap: 2px; }
 }
+
+/* Experience / publications / talks / service */
+.entry-row { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.entry-row:last-child { border-bottom: 0; }
+.entry-row .title { font-family: var(--font-head); font-weight: 600; font-size: 16px; line-height: 1.4; }
+.entry-row .date { font: 13px/1.4 var(--font-ui); color: var(--muted); margin-top: 2px; }
+.entry-row .title a { color: var(--fg); text-decoration-color: var(--line); } .entry-row .title a:hover { color: var(--accent); }

@@ -5,9 +5,9 @@ export const SITE = {
   name: "Vineeth Kalluru",
   title: "Vineeth Kalluru",
   description:
-    "Vineeth Kalluru is an applied AI engineer working on post-training, evals and voice agents.",
+    "Vineeth Kalluru is an applied AI engineer taking LLMs and agents from POC to production: post-training, evals, inference and agent harnesses.",
   intro: "Hi, I'm Vineeth.",
-  bio: "I work as an Applied AI engineer helping enterprises deploy AI agents at scale - think data curation, post-training, evals yada yada.. I write about innovative products bridging AI and the real world, my thoughts on this space, and deeper research dives.",
+  bio: "I'm an applied AI engineer who takes open models and agents from POC to production inside customer environments: data curation, post-training, evals, inference and agent harnesses. I've worked on TPUs at Google, a dataflow AI compiler at SambaNova, and enterprise GenAI at NVIDIA. I write about products bridging AI and the real world, and deeper research dives.",
   chat: "Wanna chat? DM me on X.",
   url: "https://vineethkalluru.com",
   github: "https://github.com/dreamhunter02",
@@ -36,4 +36,55 @@ export const PROJECTS: Project[] = [
     x: "https://x.com/vineethkalluru/status/2108388089731436546",
     image: "/media/jarvis-thumb.jpg",
   },
+];
+
+export interface Entry {
+  title: string;
+  meta?: string; // venue, date, status
+  href?: string;
+  note?: string;
+}
+
+export const EXPERIENCE: Entry[] = [
+  {
+    title: "Senior Solutions Architect, Generative AI, NVIDIA",
+    meta: "Nov 2023 - 2026",
+    note: "Technical owner of GenAI adoption for 25+ Tier-1 enterprise software and industrial customers, plus Microsoft Azure and OpenAI. Highlights: Zoom on-prem AI Companion (GTC 2026), Cohesity Gaia architecture (GTC 2026 keynote), Nemotron 3 Nano behind Glean's production LLM router, NVIDIA technical lead for Azure's MLPerf Inference v4.0 submission, and the Nemotron-CC data pipeline in NeMo Curator.",
+  },
+  {
+    title: "ML Accelerator Architect, Cloud TPU, Google",
+    meta: "Jul 2022 - Nov 2023",
+    note: "Performance analysis of Gemini workloads on TPU v6 and v7.",
+  },
+  {
+    title: "Compiler / ML Systems Engineer (Team Lead), SambaNova Systems",
+    meta: "Feb 2020 - Jul 2022",
+    note: "Led a 7-engineer team shipping for-loop and RNN support in a dataflow compiler: about 4x faster online inference and 5x faster LSTM training vs. A100.",
+  },
+];
+
+export const PUBLICATIONS: Entry[] = [
+  { title: "Between Weights and Workflows: Executable Graph Contracts for Bounded Enterprise Agents", meta: "IEEE ICA 2026, Kumamoto. Accepted (oral), first author" },
+  { title: "The Coherence Trap: Layer-Decomposed Failure-Mode Discovery in a Deployed Agentic LLM System", meta: "IEEE ISSRE 2026 Industry Track. Presented, first author" },
+  { title: "The Agentic Data Platform: A Contention Model and Reference Architecture for Multi-Agent Workloads on the Lakehouse", meta: "IEEE BigData 2026. Accepted, co-author" },
+  { title: "Beyond the Blue Link: Empirical Evaluation of Generative Engine Optimization in Stochastic Retrieval Systems", meta: "ACM Hypertext 2026. Published, third author", href: "https://doi.org/10.1145/3800935.3830864" },
+  { title: "Edit-Distance Links: A Hypertextual Reading of Conditional-Tokenization World Models", meta: "ACM Hypertext 2026. Published, third author", href: "https://doi.org/10.1145/3800935.3830861" },
+  { title: "SkillOpt: Trajectory-Derived, Verifier-Grounded Compilation of LLM-Agent Skills", meta: "ACM CAIS 2026 Agent Skills Workshop", href: "https://openreview.net/forum?id=2ONrrPIFYi" },
+  { title: "NVIDIA Nemotron Nano 2: An Accurate and Efficient Hybrid Mamba-Transformer Reasoning Model", meta: "arXiv 2025, co-author", href: "https://arxiv.org/abs/2508.14444" },
+  { title: "Hardware Aware Neural Network Architectures using FbNet (HANNA)", meta: "arXiv 2019, first author", href: "https://arxiv.org/abs/1906.07214" },
+];
+
+export const TALKS: Entry[] = [
+  { title: "Building Agent Harnesses to Match Frontier-Model Performance in RAG", meta: "O'Reilly AI Superstream, Jul 2026" },
+  { title: "Building Observable and Scalable Multi-Agent Workflows for Asset Lifecycle Management", meta: "NVIDIA GTC 2026 full-day DLI workshop (co-instructor)", href: "https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-dliw82268/" },
+  { title: "Get From Pilot to Production the Quick, Easy, Optimized Way", meta: "Microsoft Ignite 2024", href: "https://www.youtube.com/watch?v=m9e1ItBramY" },
+  { title: "Quickly deploy NVIDIA optimized generative AI on Azure AI Studio", meta: "Microsoft Build 2024", href: "https://www.youtube.com/watch?v=8jM7y4aQqag" },
+  { title: "Inside Glean's Enterprise Agent Stack: Post-Training NVIDIA Nemotron and Engineering the Agent Harness", meta: "TechEquity AI Summit 2026, Nov 5 (with Glean)", href: "https://events.techequity-ai.org/session/LNind" },
+];
+
+export const SERVICE: Entry[] = [
+  { title: "IEEE Senior Member", meta: "IEEE Computer Society Elevation Committee" },
+  { title: "Program committee", meta: "IEEE ICA 2026; KDD 2026 AgenticSE and Agent4IR workshops" },
+  { title: "Reviewer", meta: "IEEE TKDE; NeurIPS 2026 (ethics and workshops); ACM CAIS 2026; KDD 2026 workshops" },
+  { title: "Technical reviewer", meta: "AI Agents: The Definitive Guide; Hands-On LLM Serving and Optimization (O'Reilly)" },
 ];

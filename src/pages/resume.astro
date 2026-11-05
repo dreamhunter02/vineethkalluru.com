@@ -1,0 +1,51 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, EXPERIENCE, PUBLICATIONS, TALKS, SERVICE } from "../site";
+---
+<Base title="Resume" description="Resume of Vineeth Kalluru: applied AI engineer.">
+  <div class="intro-head">
+    <h1>Resume</h1>
+  </div>
+  <p class="bio">Applied AI engineer. <a href="/Vineeth_Kalluru_Resume_Applied_AI.pdf">Download PDF</a> · <a href={SITE.linkedin}>LinkedIn</a></p>
+
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    {EXPERIENCE.map((e) => (
+      <div class="card entry">
+        <div class="date">{e.meta}</div>
+        <div class="title">{e.title}</div>
+        {e.note && <div class="summary">{e.note}</div>}
+      </div>
+    ))}
+  </section>
+
+  <section id="publications">
+    <h2 class="section-title">Selected publications</h2>
+    {PUBLICATIONS.map((e) => (
+      <div class="entry-row">
+        <div class="title">{e.href ? <a href={e.href}>{e.title}</a> : e.title}</div>
+        <div class="date">{e.meta}</div>
+      </div>
+    ))}
+  </section>
+
+  <section id="talks">
+    <h2 class="section-title">Talks</h2>
+    {TALKS.map((e) => (
+      <div class="entry-row">
+        <div class="title">{e.href ? <a href={e.href}>{e.title}</a> : e.title}</div>
+        <div class="date">{e.meta}</div>
+      </div>
+    ))}
+  </section>
+
+  <section id="service">
+    <h2 class="section-title">Service</h2>
+    {SERVICE.map((e) => (
+      <div class="entry-row">
+        <div class="title">{e.title}</div>
+        <div class="date">{e.meta}</div>
+      </div>
+    ))}
+  </section>
+</Base>
