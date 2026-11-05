@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import ProjectCard from "../components/ProjectCard.astro";
-import { SITE, PROJECTS, EXPERIENCE, PUBLICATIONS, TALKS, SERVICE } from "../site";
+import { SITE, PROJECTS } from "../site";
 import { getPosts } from "../posts";
 
 const posts = getPosts();
@@ -28,46 +28,5 @@ const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", month:
   <section id="projects">
     <h2 class="section-title">Active projects</h2>
     {PROJECTS.map((p) => <ProjectCard project={p} />)}
-  </section>
-
-  <section id="experience">
-    <h2 class="section-title">Experience</h2>
-    {EXPERIENCE.map((e) => (
-      <div class="card entry">
-        <div class="date">{e.meta}</div>
-        <div class="title">{e.title}</div>
-        {e.note && <div class="summary">{e.note}</div>}
-      </div>
-    ))}
-  </section>
-
-  <section id="publications">
-    <h2 class="section-title">Selected publications</h2>
-    {PUBLICATIONS.map((e) => (
-      <div class="entry-row">
-        <div class="title">{e.href ? <a href={e.href}>{e.title}</a> : e.title}</div>
-        <div class="date">{e.meta}</div>
-      </div>
-    ))}
-  </section>
-
-  <section id="talks">
-    <h2 class="section-title">Talks</h2>
-    {TALKS.map((e) => (
-      <div class="entry-row">
-        <div class="title">{e.href ? <a href={e.href}>{e.title}</a> : e.title}</div>
-        <div class="date">{e.meta}</div>
-      </div>
-    ))}
-  </section>
-
-  <section id="service">
-    <h2 class="section-title">Service</h2>
-    {SERVICE.map((e) => (
-      <div class="entry-row">
-        <div class="title">{e.title}</div>
-        <div class="date">{e.meta}</div>
-      </div>
-    ))}
   </section>
 </Base>
