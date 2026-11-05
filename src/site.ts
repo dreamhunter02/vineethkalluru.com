@@ -49,7 +49,7 @@ export const EXPERIENCE: Entry[] = [
   {
     title: "Senior Solutions Architect, Generative AI, NVIDIA",
     meta: "Nov 2023 - 2026",
-    note: "Technical lead for 25+ Tier-1 enterprise software and industrial partners plus hyperscale cloud and frontier-lab partners: solution design from POC to GA production, inference at scale, post-training data, evals and agent harnesses, production debugging, executive briefings and strategic advisory, and field feedback into Nemotron, NeMo and NIM. Authored the Nemotron-CC data pipeline in NeMo Curator.",
+    note: "Technical lead for strategic enterprise software partners, taking open models and agentic systems from proof of concept to production: solution architecture, post-training and evaluation, inference performance, executive advisory and product influence. Authored the Nemotron-CC data-curation pipeline in NeMo Curator.",
   },
   {
     title: "ML Accelerator Architect, Cloud TPU, Google",
